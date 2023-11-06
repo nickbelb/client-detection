@@ -1,0 +1,81 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;1,700&display=swap');
+
+/* a css reset style sheet is a list of rules that 'reset' almost all of the default styles (aka browser styles) */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border-style: none;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+html {
+  min-height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100%;
+  font-size: 1.6rem;
+  line-height: 1.5; 
+  text-rendering: geometricPrecision;
+  -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+ul[role=list], ol[role=list] {
+  list-style: none;
+}
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+li, a, i, figure, img, button,
+input[type=button], input[type=submit] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+
+input, textarea, button {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+
+input[type=button], input[type=submit], input[type=reset], button, a {
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
